@@ -9,7 +9,7 @@ import { AiOutlineGift } from "react-icons/ai";
 import { HiOutlineSearch, HiMenu, HiOutlineMinusSm } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { useContext, useState } from "react";
-import { FaArrowRight, FaChevronCircleRight, FaClone, FaCut, FaUser } from "react-icons/fa";
+import { FaArrowRight, FaChevronCircleRight, FaClone, FaCut, FaDeskpro, FaInfo, FaUser } from "react-icons/fa";
 
 
 
@@ -24,15 +24,15 @@ const Nav = ({ isNavOpen, setIsNavOpen }) => {
     const navItem = (
         <>
             {/* latest offers  */}
-            <div className='flex items-center gap-1 text-white'>
-                <AiOutlineGift className='text-[#FC9E66] text-3xl' />
+            <Link to={"/destination"} className='flex items-center gap-1 text-white'>
+                <FaDeskpro className='text-[#FC9E66] text-3xl' />
                 <p className='leading-4 font-bold'>
-                    Offers <br />
+                    Destination <br />
                     <span className='text-xs font-normal'>
                         Latest Offers
                     </span>{" "}
                 </p>
-            </div>
+            </Link>
 
             {/* CART  */}
             <div className='flex items-center gap-1 text-white'>
@@ -56,15 +56,15 @@ const Nav = ({ isNavOpen, setIsNavOpen }) => {
                 </Link>
             </div>
             {/* PER ORDER  */}
-            <div className='flex items-center gap-1 text-white'>
-                <AiOutlineGift className='text-[#FC9E66] text-3xl' />
+            <Link to={"/about"} className='flex items-center gap-1 text-white'>
+                <FaInfo className='text-[#FC9E66] text-3xl' />
                 <p className='leading-4 font-bold'>
-                    Per-Order <br />
+                    About <br />
                     <span className='text-xs font-normal'>
-                        Order Today
+                        The Company
                     </span>{" "}
                 </p>
-            </div>
+            </Link>
             {/* ACCOUNT  */}
             <div className="flex gap-2">
 

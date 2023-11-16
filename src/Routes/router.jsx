@@ -3,6 +3,8 @@ import Layout from "../Layout/Layout";
 import Home from "../Pages/Home/Home";
 import Login from "../auth/Login/Login";
 import Register from "../auth/register/Register";
+import About from "../Pages/About/About";
+import DesRoute from "../Pages/Destinationrooute/DesRoute";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +23,15 @@ const router = createBrowserRouter([
                 path: "/login"
                 ,
                 element: <Register></Register>
+            },
+            {
+                path: "/about",
+                element: <About></About>
+            },
+            {
+                path: "/destination"
+                ,
+                element: <DesRoute></DesRoute>
             }
         ]
     }
